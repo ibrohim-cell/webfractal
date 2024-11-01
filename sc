@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+label {
+    font-size: 1em;
+    color: #555;
+}
+
+select, input[type="number"], input[type="color"] {
+    padding: 8px 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus, input[type="number"]:focus, input[type="color"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: linear-gradient(135deg, #004080, #003060);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+canvas {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+
