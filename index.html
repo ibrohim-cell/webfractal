@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Batik Fractal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aplikasi Batik Fractal Interaktif</h1>
+    <div class="controls">
+        <!-- Pilihan Motif Fractal -->
+        <label for="motif">Pilih Motif:</label>
+        <select id="motif">
+            <option value="mandelbrot">Mandelbrot</option>
+            <option value="julia">Julia</option>
+            <option value="sierpinski">Sierpinski Triangle</option>
+        </select>
+
+        <!-- Pilihan Warna -->
+        <label for="colorScheme">Skema Warna:</label>
+        <select id="colorScheme">
+            <option value="rainbow">Rainbow</option>
+            <option value="blue">Blues</option>
+            <option value="greyscale">Greyscale</option>
+        </select>
+
+        <!-- Kontrol Interaktif -->
+        <label for="maxIterations">Maksimal Iterasi:</label>
+        <input type="number" id="maxIterations" min="10" max="1000" value="100">
+
+        <button id="generateButton">Generate Fractal</button>
+        <button id="saveButton">Simpan sebagai Gambar</button>
+    </div>
+
+    <!-- Area Kanvas -->
+    <canvas id="fractalCanvas" width="600" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
